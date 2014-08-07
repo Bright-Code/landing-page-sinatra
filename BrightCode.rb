@@ -15,7 +15,6 @@ class BrightCode < Sinatra::Base
 
     js :application, [
       '/js/jquery-1.11.0.js',
-      '/js/bootstrap.js',
       '/js/bootstrap.min.js',
       '/js/main.js',
       '/js/less.min.js',
