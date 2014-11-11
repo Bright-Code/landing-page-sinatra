@@ -5,16 +5,14 @@
   overflow:hidden;
   width:100%;
   margin:0px auto;
-  background:#1b1b1b;
-  border:1px solid #000;
-  box-shadow:0 3px 5px #666;
+  background-color: #111;
 }
 
 .slider{
   position:relative;
   width:100%;
   margin:0 auto;
-  background:#1b1b1b;
+
 }
 @media only screen and (min-width: 1000px){
   .slider{
@@ -97,10 +95,13 @@
 
 }
 
+
+
 .slide p.claim{
     display:block;
     line-height:100% !important;
     width:auto !important; height:auto !important;
+    font-size:37px !important;
 
 
 }
