@@ -52,13 +52,14 @@ class BrightCode < Sinatra::Base
     erb :start
   end
 
-  get '/mail' do
+  post '/mail' do
+    contact_params = params.dup
     mail = Mail.deliver do
       to "contact@cod3rs.co"
-      from "contact@codd3rs.co"
-      subject 'Test maila'
+      from contact_params[:email]
+      subject contact_params[:subject]
       text_part do
-        body "Tescik sinatra mail"
+        body contact_params[:text]
       end
     end
   end

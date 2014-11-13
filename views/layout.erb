@@ -60,32 +60,32 @@
               </ul>
           </div>
           <div class="col-md-5 col-md-offset-1">
-            <form class="form-horizontal" role="contact-form">
+            <form class="form-horizontal" role="contact-form" method="post" action="/mail">
               <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="inputSubject" class="col-sm-2 control-label">Subject</label>
                 <div class="col-sm-10">
-                  <input type="subject" class="form-control" id="inputSubject" placeholder="Subject">
+                  <input type="subject" class="form-control" id="inputSubject" placeholder="Subject" name="subject">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="inputSubject" class="col-sm-2 control-label">Text</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" id="inputText" rows="3"></textarea>
+                  <textarea class="form-control" id="inputText" rows="3" name="text"></textarea>
                 </div>
               </div>
 
@@ -111,7 +111,7 @@
               <p class="muted pull-left">© 2014 cod3rs. All rights reserved</p>
             </div>
             <div class="col-md-4 text-right">
-              <p>Our contact: <a href="mailto:question@cod3rs.co">contact@cod3rs.co</a></p>
+              <p>Our contact: <a href="mailto:contact@cod3rs.co">contact@cod3rs.co</a></p>
             </div>
           </div>
         </div>
