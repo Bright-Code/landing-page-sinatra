@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/assetpack'
+require 'mail'
 
 class BrightCode < Sinatra::Base
   set :root, File.dirname(__FILE__)
@@ -34,7 +35,31 @@ class BrightCode < Sinatra::Base
     prebuild true
   end
 
+  Mail.defaults do
+    delivery_method :smtp, {
+      :address => 'mailng.az.pl',
+      :port => 587,
+      :domain => 'cod3rs.co',
+      :user_name => ENV['smtp_login'],
+      :password => ENV['smpt_password'],
+      :authentication => 'plain',
+      :enable_starttls_auto => true,
+      :openssl_verify_mode  => 'none'
+    }
+  end
+
   get '/' do
     erb :start
+  end
+
+  get '/mail' do
+    mail = Mail.deliver do
+      to "contact@cod3rs.co"
+      from "contact@codd3rs.co"
+      subject 'Test maila'
+      text_part do
+        body "Tescik sinatra mail"
+      end
+    end
   end
 end
