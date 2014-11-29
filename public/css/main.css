@@ -640,7 +640,7 @@ section header {
   height: 47px;
   position: relative;
   display: inline-block;
-  background: url('../images/gold-logo.svg') no-repeat center;
+  background: url('/img/gold-logo.svg') no-repeat center;
   background-size: 100% auto; }
   .gs-logo.gs-large-logo {
     width: 60px;
@@ -654,7 +654,7 @@ section header {
   height: 47px;
   position: relative;
   display: inline-block;
-  background: url('../images/gold-dark-logo.svg') no-repeat center;
+  background: url('/img/gold-dark-logo.svg') no-repeat center;
   background-size: 100% auto; }
   .gs-dark-logo.gs-large-logo {
     width: 60px;
@@ -746,7 +746,7 @@ section header {
     height: 100%;
     border-right: 1px solid #222222;
     display: inline-block;
-    background-image: url('../images/gold-dark-logo.svg');
+    background-image: url('/img/gold-dark-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px auto;
@@ -787,7 +787,7 @@ section header {
     height: 100%;
     border-right: 1px solid #FFFFFF;
     display: inline-block;
-    background-image: url('../images/gold-logo.svg');
+    background-image: url('/img/gold-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px auto;
@@ -852,7 +852,7 @@ header {
     font-weight: 400;
     line-height: 1.6; }
   .gs-main-header .gs-header-bg {
-    background-image: url("../images/page-heading-bg.jpg");
+    background-image: url("/img/page-heading-bg.jpg");
     background-attachment: fixed;
     background-position: 50% 0%;
     background-size: cover; }
@@ -875,7 +875,7 @@ header {
   .gs-main-header-fullheight .gs-main-header-fh-wrapper {
     height: 100%; }
   .gs-main-header-fullheight .gs-header-bg {
-    background-image: url("../images/page-heading-fullheight-bg.jpg");
+    background-image: url("/img/page-heading-fullheight-bg.jpg");
     background-attachment: fixed;
     background-position: 50% 0%;
     background-size: cover; }
@@ -1195,7 +1195,7 @@ main, #gs-navfix, #gs-nav-static {
         display: block;
         width: 40px;
         height: 40px;
-        background-image: url("../images/diamond-border.svg"); }
+        background-image: url("/img/diamond-border.svg"); }
       .gs-home-process .gs-home-process-item .gs-home-process-divider span {
         position: relative;
         width: 300px;
@@ -1271,7 +1271,7 @@ main, #gs-navfix, #gs-nav-static {
   .about-item.about-left .about-content {
     left: 30px; }
     .about-item.about-left .about-content:after {
-      background-image: url(../images/about-left-content-line.png);
+      background-image: url(/img/about-left-content-line.png);
       right: -65px; }
   .about-item.about-left .about-img {
     float: right; }
@@ -1280,7 +1280,7 @@ main, #gs-navfix, #gs-nav-static {
   .about-item.about-right .about-content {
     right: 30px; }
     .about-item.about-right .about-content:after {
-      background-image: url(../images/about-right-content-line.png);
+      background-image: url(/img/about-right-content-line.png);
       left: -65px; }
   .about-item.about-right .about-img {
     float: left; }
@@ -1700,7 +1700,7 @@ main, #gs-navfix, #gs-nav-static {
   display: block;
   width: 100%;
   padding-top: 4.3%;
-  background: url('../images/Browser_window.png');
+  background: url('/img/Browser_window.png');
   background-repeat: no-repeat;
   background-size: 100% auto; }
 .gs-portfolio-carousel .owl-item.center {
