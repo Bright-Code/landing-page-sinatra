@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './BrightCode'
-run BrightCode
+require './COD3RS'
+run COD3RS

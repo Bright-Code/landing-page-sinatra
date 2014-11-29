@@ -12,27 +12,31 @@
       <!-->
 <html class="no-js">
       <!--<![endif]-->
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="COD3RS | Company building web applications">
-    <meta name="author" content="Paweł Puchalski, Miłosz Osiński, Jacek Gałka">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="fb:app_id" content="" />
-    <meta property="og:site_name" content="COD3RS" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/img/logo_symbol.png" />
-    <meta property="og:title" content="COD3RS.co" />
-    <meta property="og:url" content="http://cod3rs.co" />
-    <meta property="og:description" content="We are group of friends who design, develop, integrate and maintain business applications." />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <title>COD3RS</title>
-    <%= css :application %>
-    <%= js :application %>
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <meta name="description" content="COD3RS | Company building web applications">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- vendor css -->
+    <!-- some vendor css was in scss source -->
+    <link rel="stylesheet" href="assets/styles/bootstrapG.css">
+    <link rel="stylesheet" href="assets/styles/plugins.css">
+    <!-- //vendor css -->
+
+    <!-- font Ralaway and awesome larva-icon -->
+    <link rel="stylesheet" href="assets/fonts/icon-font/gold/styles.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
   </head>
+
   <body>
+
     <!--[if lt IE 7]>
     <p class="browsehappy">
     You are using an <strong>outdated</strong>
@@ -202,7 +206,7 @@
                     <p>In keeping with the contemporary trends we create websites diverse in design; each with a unique concept that compliments the brand image and provides users with a one of a kind digital adventure.</p>
                   </div>
                   <div class="about-img">
-                    <img src="img/about1.png" alt="about1" class="img-responsive">
+                    <img src="assets/images/about1.png" alt="about1" class="img-responsive">
                   </div>
                 </div>
                 <div class="about-item about-right col-md-6 col-xs-12 clearfix gs-section-item">
@@ -211,7 +215,7 @@
                     <p>We streamline projects, eliminate time sucks and spend time only on things that add value, meaning we meet your goals and objectives in half the time.</p>
                   </div>
                   <div class="about-img">
-                    <img src="img/about2.png" alt="about1" class="img-responsive">
+                    <img src="assets/images/about2.png" alt="about1" class="img-responsive">
                   </div>
                 </div>
               </div>
@@ -284,9 +288,9 @@
           </div>
         </div>
         <div class="gs-portfolio-carousel owl-carousel gs-section-item">
-          <img src="img/portfolio1.jpg" alt="portfolio-carousel-images">
-          <img src="img/portfolio2.jpg" alt="portfolio-carousel-images">
-          <img src="img/portfolio3.jpg" alt="portfolio-carousel-images">
+          <img src="assets/images/portfolio1.jpg" alt="portfolio-carousel-images">
+          <img src="assets/images/portfolio2.jpg" alt="portfolio-carousel-images">
+          <img src="assets/images/portfolio3.jpg" alt="portfolio-carousel-images">
         </div>
         <div class="container-fullsize text-center gs-section-item">
           <a href="#" class="gs-btn-icon-1">VIEW MORE</a>
@@ -307,7 +311,7 @@
         <div class="gs-testimonial-carousel owl-carousel has-dots gs-section-item">
           <div class="gs-testimonial-item">
             <div class="gs-testimonial-avatar">
-              <img src="img/testimonial1.jpg" alt="avatar">
+              <img src="assets/images/testimonial1.jpg" alt="avatar">
             </div>
             <q>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum .
@@ -316,7 +320,7 @@
           </div>
           <div class="gs-testimonial-item">
             <div class="gs-testimonial-avatar">
-              <img src="img/testimonial2.jpg" alt="avatar">
+              <img src="assets/images/testimonial2.jpg" alt="avatar">
             </div>
             <q>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum .
@@ -325,7 +329,7 @@
           </div>
           <div class="gs-testimonial-item">
             <div class="gs-testimonial-avatar">
-              <img src="img/testimonial3.jpg" alt="avatar">
+              <img src="assets/images/testimonial3.jpg" alt="avatar">
             </div>
             <q>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum .
@@ -346,31 +350,31 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.</p>
               </header>
               <div class="gs-client-brand visible-xlg gs-section-item">
-                <a href="#"><img src="img/brand1.png" alt="brand"></a>
-                <a href="#"><img src="img/brand2.png" alt="brand"></a>
-                <a href="#"><img src="img/brand3.png" alt="brand"></a>
-                <a href="#"><img src="img/brand4.png" alt="brand"></a>
-                <a href="#"><img src="img/brand5.png" alt="brand"></a>
-                <a href="#"><img src="img/brand6.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand1.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand2.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand3.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand4.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand5.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand6.png" alt="brand"></a>
               </div>
               <div class="clearfix visible-xlg gs-section-item"><a href="contact.html" class="gs-btn-3">CONTACT US</a></div>
             </div>
             <div class="col-xlg-8 col-xs-12 gs-section-item gs-mg-b-30">
               <div class="gs-client-map">
                 <div class="gs-overlay">
-                  <img src="img/map-overlay.png" alt="map">
+                  <img src="assets/images/map-overlay.png" alt="map">
                 </div>
-                <img src="img/map-bg.jpg" alt="map">
+                <img src="assets/images/map-bg.jpg" alt="map">
               </div>
             </div>
             <div class="col-xs-12 hidden-xlg">
               <div class="gs-client-brand gs-section-item">
-                <a href="#"><img src="img/brand1.png" alt="brand"></a>
-                <a href="#"><img src="img/brand2.png" alt="brand"></a>
-                <a href="#"><img src="img/brand3.png" alt="brand"></a>
-                <a href="#"><img src="img/brand4.png" alt="brand"></a>
-                <a href="#"><img src="img/brand5.png" alt="brand"></a>
-                <a href="#"><img src="img/brand6.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand1.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand2.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand3.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand4.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand5.png" alt="brand"></a>
+                <a href="#"><img src="assets/images/brand6.png" alt="brand"></a>
               </div>
               <div class="text-center gs-section-item"><a href="contact.html" class="gs-btn-3">CONTACT US</a></div>
             </div>
@@ -387,7 +391,7 @@
           </div>
         </div>
         <div class="gs-video-wrapper gs-ab-center">
-          <video id="gs-section-video" loop muted preload="auto" poster="img/video-poster.jpg" width="1920">
+          <video id="gs-section-video" loop muted preload="auto" poster="assets/images/video-poster.jpg" width="1920">
             <source src="assets/videos/city.mp4" type="video/mp4">
             <source src="assets/videos/city.ogv" type="video/ogg">
             <source src="assets/videos/city.webm" type="video/ogg">
@@ -410,7 +414,7 @@
             <div class="col-xlg-2 col-md-4 col-sm-6 col-xs-12 gs-section-item">
               <div class="gs-team-item">
                 <div class="gs-team-avatar">
-                  <img src="img/team1.jpg" alt="avatar">
+                  <img src="assets/images/team1.jpg" alt="avatar">
                   <div class="gs-team-social">
                     <a href="#"><i class="gs-icon-small icon-twitter"></i></a>
                     <a href="#"><i class="gs-icon-small icon-facebook"></i></a>
