@@ -27,9 +27,9 @@ class COD3RS < Sinatra::Base
 
     css :application, [
       '/css/bootstrapG.css',
-      '/css/custom.css',
       '/css/main.css',
-      '/css/plugins.css'
+      '/css/plugins.css',
+      '/css/icons.css'
     ]
 
     js_compression :jsmin
