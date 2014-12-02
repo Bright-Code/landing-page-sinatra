@@ -1192,12 +1192,18 @@ main, #gs-navfix, #gs-nav-static {
 /* About */
 /* About */
 #about {
-  /*make about img the bottom*/
   padding-bottom: 0 !important;
   margin-bottom: -70px;
-  padding-top: 80px; }
-  #about .gs-dark-logo {
-    width: 50px; }
+  padding-top: 80px;
+}
+
+#about .gs-dark-logo {
+  width: 50px;
+}
+
+#about-img-1 {
+  float: right;
+}
 
 .about-item .about-content {
   position: absolute;
