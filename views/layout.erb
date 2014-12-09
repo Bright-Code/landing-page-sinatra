@@ -44,18 +44,19 @@
 
     <nav class="gs-navfix" id="gs-navfix">
       <div class="container-fullsize">
-        <a href="index.html">
+        <a href="/">
           <div class="gs-navfix-brand clearfix">
             <div class="gs-dark-logo"></div>
             <div class="gs-brand">COD<span class="gs-fw-semibold">3</span>RS</div>
           </div>
         </a>
         <div class="gs-navfix-content">
-          <a href="index.html">HOMEPAGE</a>
-          <a href="shortcode-service.html">SHORTCODES</a>
-          <a href="404.html">PAGES</a>
-          <a href="blog.html">BLOG</a>
-          <a href="contact.html">CONTACT</a>
+          <a href="#home">HOMEPAGE</a>
+          <a href="#about">ABOUT US</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#team">OUR TEAM</a>
+          <a href="#pricing-table">PRICES</a>
+          <a href="#contact">CONTACT</a>
           <i class="gs-hamburger icon-menu55"></i>
         </div>
       </div>
@@ -63,7 +64,7 @@
 
     <nav class="gs-nav-static" id="gs-nav-static">
       <div class="container-fullsize">
-        <a href="index.html">
+        <a href="/">
           <div class="gs-gold-brand">
             <div class="gs-logo"></div>
             <div class="gs-brand">COD<span class="gs-fw-semibold">3</span>RS</div>
@@ -88,8 +89,8 @@
         <a href="#client"><i class="icon-map-streamline-user"></i>CLIENTS</a>
         <a href="#team"><i class="icon-man-people-streamline-user"></i>OUR TEAM</a>
         <a href="#pricing-table"><i class="icon-streamline-suitcase-travel"></i>PRICING TABLE</a>
-        <a href="#blog"><i class="icon-news"></i>BLOG</a>
-        <a href="contact.html"><i class="icon-map-pin-streamline"></i>CONTACT</a>
+        <a href="#blog" style="display:none"><i class="icon-news"></i>BLOG</a>
+        <a href="#contact"><i class="icon-map-pin-streamline"></i>CONTACT</a>
         <a href="shortcode-service.html" title=""><i class="icon-settings-streamline"></i>SHORTCODES</a>
       </div>
     </nav>
@@ -232,7 +233,7 @@
             <div class="gs-service-item">
               <i class="gs-icon-medium icon icon-design-pencil-rule-streamline"></i>
               <h5>WEB DESIGN</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum.</p>
+              <p>We create attractive and stunning design for clients to make it outstanding among others as reflections of their business.</p>
             </div>
           </div>
           <!-- make service item view like have same height -->
@@ -352,7 +353,7 @@
                 <a href="#"><img src="img//brands/brand3.png" alt="brand"></a>
                 <a href="#"><img src="img/brands/brand4.png" alt="brand"></a>
               </div>
-              <div class="clearfix visible-xlg gs-section-item"><a href="contact.html" class="gs-btn-3">CONTACT US</a></div>
+              <div class="clearfix visible-xlg gs-section-item"><a href="#contact" class="gs-btn-3">CONTACT US</a></div>
             </div>
             <div class="col-xlg-8 col-xs-12 gs-section-item gs-mg-b-30">
               <div class="gs-client-map">
@@ -369,7 +370,7 @@
                 <a href="#"><img src="img//brands/brand3.png" alt="brand"></a>
                 <a href="#"><img src="img/brands/brand4.png" alt="brand"></a>
               </div>
-              <div class="text-center gs-section-item"><a href="contact.html" class="gs-btn-3">CONTACT US</a></div>
+              <div class="text-center gs-section-item"><a href="#contact" class="gs-btn-3">CONTACT US</a></div>
             </div>
           </div>
         </div>
@@ -572,7 +573,7 @@
         </div>
       </section>
 
-      <section id="blog" class="gs-bg-light">
+      <section id="blog" class="gs-bg-light" style="display:none">
         <div class="container-fullsize">
           <div class="row">
             <header class="col-xs-12">
@@ -628,6 +629,35 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact" class="gs-bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12 gs-section-item">
+            <div class="gs-contact-info">
+              <h5>CONTACT INFO</h5>
+              <p>16 East Wood Avenue, New York, NY 778569, USA</p>
+              <dl>
+                <dt><b>PHONE:</b> +444 123456789</dt>
+                <dt><b>FAX:</b> +444 123456789</dt>
+                <dt><b>EMAIL:</b> hello@domain.com</dt>
+                <dt><b>WEB:</b><a href="#" class="gs-main-color">www.domain.com</a></dt>
+              </dl>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12 gs-section-item">
+            <form class="gs-input-form">
+              <input class="gs-name" type="text" placeholder="Name">
+              <input class="gs-email" type="email" placeholder="Email">
+              <input class="gs-subject" type="text" placeholder="Subject">
+              <textarea name="Content" placeholder="Content"></textarea>
+              <button class="gs-btn-1">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
       </section>
 
       <!-- Main Footer -->
