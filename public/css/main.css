@@ -595,7 +595,7 @@ section header {
   height: 47px;
   position: relative;
   display: inline-block;
-  background: url('/img/gold-logo.svg') no-repeat center;
+  background: url('/img/logo-white.svg') no-repeat;
   background-size: 100% auto; }
   .gs-logo.gs-large-logo {
     width: 60px;
@@ -609,7 +609,7 @@ section header {
   height: 47px;
   position: relative;
   display: inline-block;
-  background: url('/img/gold-dark-logo.svg') no-repeat center;
+  background: url('/img/logo-black.svg') no-repeat;
   background-size: 100% auto; }
   .gs-dark-logo.gs-large-logo {
     width: 60px;
@@ -701,7 +701,7 @@ section header {
     height: 100%;
     border-right: 1px solid #222222;
     display: inline-block;
-    background-image: url('/img/gold-dark-logo.svg');
+    background-image: url('/img/logo-black.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px auto;
@@ -742,7 +742,7 @@ section header {
     height: 100%;
     border-right: 1px solid #FFFFFF;
     display: inline-block;
-    background-image: url('/img/gold-logo.svg');
+    background-image: url('/img/logo-white.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px auto;
@@ -2301,4 +2301,12 @@ main, #gs-navfix, #gs-nav-static {
 .company-stats-module p {
   margin: 0;
   font-size: 16px;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
