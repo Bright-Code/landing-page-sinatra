@@ -830,7 +830,7 @@ header {
   .gs-main-header-fullheight .gs-main-header-fh-wrapper {
     height: 100%; }
   .gs-main-header-fullheight .gs-header-bg {
-    background-image: url("/img/page-heading-bg-coder.jpg");
+    background-image: url("/img/page-heading-bg.jpg");
     background-attachment: fixed;
     background-position: 50% 0%;
     background-size: cover; }
