@@ -47,7 +47,7 @@
         <a href="/">
           <div class="gs-navfix-brand clearfix">
             <div class="gs-dark-logo"></div>
-            <div class="gs-brand">COD<span class="gs-fw-semibold">3</span>RS</div>
+            <div class="gs-brand">COD<span class="gs-fw-semibold gs-fw-border-black">3</span>RS</div>
           </div>
         </a>
         <div class="gs-navfix-content">
@@ -67,7 +67,7 @@
         <a href="/">
           <div class="gs-gold-brand">
             <div class="gs-logo"></div>
-            <div class="gs-brand">COD<span class="gs-fw-semibold">3</span>RS</div>
+            <div class="gs-brand">COD<span class="gs-fw-semibold gs-fw-border-white">3</span>RS</div>
           </div>
         </a>
         <div class="gs-nav-static-hamburger">
@@ -79,7 +79,7 @@
 
     <nav class="gs-nav-right" id="gs-nav-right">
       <i class="icon-menu55 gs-hamburger" id="gs-close-nav-right"></i>
-      <div class="gs-nav-right-title">COD<span class="gs-fw-semibold">3</span>RS</div>
+      <div class="gs-nav-right-title">COD<span class="gs-fw-semibold gs-fw-border-white">3</span>RS</div>
       <div class="gs-nav-right-content">
         <a href="#home"><i class="icon-home-house-streamline"></i>HOMEPAGE</a>
         <a href="#about"><i class="icon-speech-streamline-talk-user"></i>ABOUT US</a>
@@ -104,7 +104,8 @@
           <div class="col-xs-12 gs-col-nopadding gs-home-slider-wrapper">
             <div class="gs-home-slider has-dots owl-light-theme owl-carousel gs-middle">
               <div class="gs-home-slider-item">
-                <h1 class="gs-home-slider-caption gs-mg-b-60">HELLO, WELCOME TO<br>COD<font color="red">3</font>RS</h1>
+                <h1 class="gs-home-slider-caption gs-mg-b-60">HELLO, WELCOME TO<br>COD<span class="gs-fw-semibold" style="color:gray!important;background:white">3</span>RS</h1>
+                <h1 class="gs-home-slider-caption gs-mg-b-60" style="display:none">HELLO, WELCOME TO<br>COD<span class="gs-fw-semibold" style="border:1px solid #FFF;">3</span>RS</h1>
                 <div class="gs-home-slider-caption">
                   <a href="#about" class="gs-btn-icon-2">VIEW MORE</a>
                 </div>
@@ -647,12 +648,12 @@
             </div>
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12 gs-section-item">
-            <form class="gs-input-form">
-              <input class="gs-name" type="text" placeholder="Name">
-              <input class="gs-email" type="email" placeholder="Email">
-              <input class="gs-subject" type="text" placeholder="Subject">
-              <textarea name="Content" placeholder="Content"></textarea>
-              <button class="gs-btn-1">SEND</button>
+            <form class="gs-input-form" role="contact-form" method="post" action="/mail">
+              <input class="gs-name" id="inputName" type="text" placeholder="Name">
+              <input class="gs-email" id="inputEmail" type="email" placeholder="Email">
+              <input class="gs-subject" id="inputSubject" type="text" placeholder="Subject">
+              <textarea name="Content" id="inputText" placeholder="Content"></textarea>
+              <button class="gs-btn-1" type="submit">SEND</button>
             </form>
           </div>
         </div>

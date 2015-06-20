@@ -94,6 +94,13 @@ hr {
 .gs-fw-light {
   font-weight: 300; }
 
+.gs-fw-border-white {
+  border:1px solid #FFF; }
+
+.gs-fw-border-black {
+  border:1px solid #000;
+  padding:1px; }
+
 .gs-fs-1 {
   font-size: 14px; }
 
