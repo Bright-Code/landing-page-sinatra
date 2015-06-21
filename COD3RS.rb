@@ -2,11 +2,14 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/assetpack'
 require 'mail'
+require 'sinatra/flash'
 
 class COD3RS < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :protection, :except => :frame_options
+  enable :sessions
 
+  register Sinatra::Flash
   register Sinatra::AssetPack
 
   assets do
@@ -56,14 +59,19 @@ class COD3RS < Sinatra::Base
 
   post '/mail' do
     contact_params = params.dup
-    puts contact_params.inspect
-    mail = Mail.deliver do
-      to "contact@cod3rs.co"
-      from contact_params[:email]
-      subject contact_params[:subject]
-      text_part do
-        body contact_params[:text]
+    begin
+      mail = Mail.deliver do
+        to "contact@cod3rs.co"
+        from contact_params[:email]
+        subject contact_params[:subject]
+        text_part do
+          body contact_params[:text]
+        end
       end
+      flash[:notice] = "Thank you for your message. We'll be in touch soon."
+    rescue Exception => exception
+      flash[:error] = "Upss... Something goes wrong. We work on it."
     end
+    redirect to('/')
   end
 end

@@ -40,6 +40,8 @@
     </p>
     <![endif]-->
 
+    <%= styled_flash %>
+
     <nav class="gs-navfix" id="gs-navfix">
       <div class="container-fullsize">
         <a href="/">
@@ -606,5 +608,12 @@
         </div>
       </footer>
     </main>
+    <script>
+      $(function() {
+        $('#flash').delay(500).fadeIn('normal', function() {
+          $(this).delay(5000).fadeOut();
+        });
+      });
+    </script>
   </body>
 </html>
