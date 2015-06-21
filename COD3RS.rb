@@ -27,7 +27,6 @@ class COD3RS < Sinatra::Base
 
     css :application, [
       '/css/bootstrapG.css',
-      '/css/fonts.css',
       '/css/main.css',
       '/css/plugins.css',
       '/css/icons.css'
@@ -57,6 +56,7 @@ class COD3RS < Sinatra::Base
 
   post '/mail' do
     contact_params = params.dup
+    puts contact_params.inspect
     mail = Mail.deliver do
       to "contact@cod3rs.co"
       from contact_params[:email]
