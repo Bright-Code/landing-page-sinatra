@@ -68,7 +68,7 @@ class COD3RS < Sinatra::Base
           body contact_params[:text]
         end
       end
-      flash[:notice] = "Thank you for your message. We'll be in touch soon."
+      flash[:success] = "Thank you for your message. We'll be in touch soon."
     rescue Exception => exception
       flash[:error] = "Upss... Something goes wrong. We work on it."
     end
