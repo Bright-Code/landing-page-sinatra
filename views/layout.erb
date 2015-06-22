@@ -28,7 +28,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <title>COD3RS</title>
     <%= css :application %>
-    <%= js :application %>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -39,8 +38,6 @@
     to improve your experience.
     </p>
     <![endif]-->
-
-    <%= styled_flash %>
 
     <nav class="gs-navfix" id="gs-navfix">
       <div class="container-fullsize">
@@ -577,11 +574,11 @@
             </div>
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12 gs-section-item">
-            <form class="gs-input-form" role="contact-form" method="post" action="/mail">
-              <input class="gs-name" id="inputName" type="text" placeholder="Name" name="name">
-              <input class="gs-email" id="inputEmail" type="email" placeholder="Email" name="email">
-              <input class="gs-subject" id="inputSubject" type="text" placeholder="Subject" name="subject">
-              <textarea id="inputText" placeholder="Content" name="text"></textarea>
+            <form class="gs-input-form" role="contact-form" method="post" action="/mail" required>
+              <input class="gs-name" id="inputName" type="text" placeholder="Name" name="name" required>
+              <input class="gs-email" id="inputEmail" type="email" placeholder="Email" name="email" required>
+              <input class="gs-subject" id="inputSubject" type="text" placeholder="Subject" name="subject" required>
+              <textarea id="inputText" placeholder="Content" name="text" required></textarea>
               <button class="gs-btn-1" type="submit">SEND</button>
             </form>
           </div>
@@ -608,12 +605,6 @@
         </div>
       </footer>
     </main>
-    <script>
-      $(function() {
-        $('#flash').delay(500).fadeIn('normal', function() {
-          $(this).delay(5000).fadeOut();
-        });
-      });
-    </script>
+    <%= js :application %>
   </body>
 </html>
