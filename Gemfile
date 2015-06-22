@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
 gem 'sinatra'
 gem 'thin'
 gem 'rake'
 gem 'sass'
 gem 'sinatra-assetpack'
 gem 'mail'
+gem 'sinatra-flash'
