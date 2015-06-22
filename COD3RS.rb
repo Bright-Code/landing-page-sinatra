@@ -25,7 +25,8 @@ class COD3RS < Sinatra::Base
       '/js/bootstrap.min.js',
       '/js/main.js',
       '/js/modernizr-2.6.2-respond-1.1.0.min.js',
-      '/js/owl.carousel.min.js'
+      '/js/owl.carousel.min.js',
+      '/js/ajax-forms.js'
     ]
 
     css :application, [
@@ -46,8 +47,7 @@ class COD3RS < Sinatra::Base
       :port => 587,
       :domain => 'cod3rs.co',
       :user_name => ENV['smtp_login'],
-      :password => ENV['smpt_password'],
-      :authentication => 'plain',
+      :password => ENV['smpt_password'], :authentication => 'plain',
       :enable_starttls_auto => true,
       :openssl_verify_mode  => 'none'
     }
@@ -72,6 +72,6 @@ class COD3RS < Sinatra::Base
     rescue Exception => exception
       flash[:error] = "Upss... Something goes wrong. We work on it."
     end
-    redirect to('/')
+    styled_flash
   end
 end
