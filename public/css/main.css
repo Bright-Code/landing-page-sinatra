@@ -458,12 +458,18 @@ hr {
 
 /* Speical div */
 .gs-overlay, .gs-overlay-bg {
-  position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
-  z-index: 512; }
+  z-index: 512;
+  top: 0px;
+  position: absolute;
+}
+
+.gs-overlay.video {
+  top: 0px;
+  position: static;
+}
 
 .gs-overlay-bg {
   z-index: -1; }
@@ -849,11 +855,15 @@ header {
 
 @media (max-width: 769px) {
   .gs-main-header {
-    height: 450px; }
-    .gs-main-header h1 {
-      font-size: 50px; }
-    .gs-main-header .gs-header-caption {
-      font-size: 18px; } }
+    height: 450px; 
+  }
+  .gs-main-header h1 {
+    font-size: 50px; 
+  }
+  .gs-main-header .gs-header-caption {
+    font-size: 18px; 
+  } 
+}
 
 /* Footer */
 /* Footer */
@@ -1782,7 +1792,8 @@ main, #gs-navfix, #gs-nav-static {
     height: 100%; }
 
 #video {
-  height: 450px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   overflow: hidden;
   color: #FFFFFF;
   text-align: center; }
@@ -1798,12 +1809,10 @@ main, #gs-navfix, #gs-nav-static {
   #video .gs-overlay, #video .gs-overlay-bg {
     background: transparent url(/img/asd.jpg);
     background-repeat: no-repeat;
-    background-position: 0% 0%;
-    background-origin: padding-box;
+    background-position: center !important;
+    //background-origin: padding-box;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
     padding: 125px 0px }
     #video .gs-overlay .gs-center, #video .gs-overlay .gs-overlay-bg {
       width: 100%; }
@@ -1817,17 +1826,23 @@ main, #gs-navfix, #gs-nav-static {
 /*Responsive Video*/
 @media (max-width: 1201px) {
   #video {
-    height: 450px; }
-    #video .gs-video-wrapper {
-      width: 1200px;
-      height: 720px; } }
+    //height: 450px; 
+  }
+  #video .gs-video-wrapper {
+    width: 1200px;
+    //height: 720px; 
+  }
+}
 
 @media (max-width: 769px) {
   #video {
-    height: 300px; }
-    #video .gs-video-wrapper {
-      width: 800px;
-      height: 450px; } }
+    //height: 300px; 
+  }
+  #video .gs-video-wrapper {
+    width: 800px;
+    height: 450px; 
+  } 
+}
 
 /* Blog vs Blog-shortcode */
 /* Blog-present shortcode */
@@ -2295,6 +2310,7 @@ main, #gs-navfix, #gs-nav-static {
   height: 110px;
   border-radius: 50%;
   font-size: 66px;
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 }
 .company-stats-module .company-stats-amount span {
   color: #42bd41;
@@ -2302,6 +2318,7 @@ main, #gs-navfix, #gs-nav-static {
   display: block;
   margin: 10px 0 5px 0;
   font-weight: 300;
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 }
 .company-stats-module p {
   margin: 0;
