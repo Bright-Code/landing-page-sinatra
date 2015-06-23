@@ -1,0 +1,27 @@
+=== Heroku
+  git remote add heroku git@heroku.com:cod3rs.git
+
+=== Prekompilacja
+Usunięcie brancha lokalnego
+  git branch -D precompiled-assets
+
+Usunięcie brancha na gicie
+  git branch -rd origin/precompiled-assets
+
+Stworzenie nowego brancha
+  git checkout -b precompiled-assets
+  
+Przeprowadzenie prekompilacji
+  rake assetpack:build
+
+Dodanie plików
+  git add .
+  
+Commit plików
+  git commit -m 'precompile'
+  
+Push na gita
+  git push origin precompiled-assets
+  
+Push na heroku
+  git push heroku precompiled-assets:master
