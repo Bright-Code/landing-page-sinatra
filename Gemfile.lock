@@ -42,6 +42,3 @@ DEPENDENCIES
   sinatra-assetpack
   sinatra-flash
   thin
-
-BUNDLED WITH
-   1.10.0
