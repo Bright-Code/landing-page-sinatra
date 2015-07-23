@@ -60,12 +60,14 @@ class COD3RS < Sinatra::Base
   post '/mail' do
     contact_params = params.dup
     begin
-      mail = Mail.deliver do
+      email_body = erb :template_mailer, layout: false, locals: {text: params[:text]}
+      Mail.deliver do
         to "contact@cod3rs.co"
         from contact_params[:email]
         subject contact_params[:subject]
-        text_part do
-          body contact_params[:text]
+        html_part do
+          content_type 'text/html; charset=UTF-8'
+          body email_body
         end
       end
       flash[:success] = "Thank you for your message. We'll be in touch soon."
