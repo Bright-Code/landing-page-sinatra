@@ -43,13 +43,13 @@ class COD3RS < Sinatra::Base
 
   Mail.defaults do
     delivery_method :smtp, {
-      :address => 'mailng.az.pl',
-      :port => 587,
+      :address => 'az0103.srv.az.pl',
+      :port => 465,
       :domain => 'cod3rs.co',
       :user_name => ENV['smtp_login'],
-      :password => ENV['smpt_password'], :authentication => 'plain',
-      :enable_starttls_auto => true,
-      :openssl_verify_mode  => 'none'
+      :password => ENV['smpt_password'],
+      :authentication => :plain,
+      :enable_starttls_auto => true
     }
   end
 
