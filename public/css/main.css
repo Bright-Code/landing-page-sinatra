@@ -1061,7 +1061,7 @@ nav.gs-nav-right {
   padding: 40px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  overflow-y: scroll; }
+  overflow-y: auto; }
 nav.gs-nav-right:before, nav.gs-nav-right:after {
   content: " ";
   display: table; }
